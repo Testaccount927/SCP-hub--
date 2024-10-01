@@ -1,0 +1,49 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SCP HUB", "DarkTheme")
+local Tab = Window:NewTab("SCP HUB")
+local Section = Tab:NewSection("SCP HUB") 
+Section:NewButton("Become green Monster (attacks) ", "its. a morph", function()
+    local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").MorphEvent:FireServer(unpack(args))
+    print("Clicked")
+end)
+Section:NewButton("damage SCP 096 with assault rifle", "ButtonInfo", function()
+        while wait() do
+local args = {
+    [1] = workspace["SCP 096"]["SCP 096"].Humanoid,
+    [2] = "AssaultRifle",
+    [3] = 3672
+}
+            
+
+game:GetService("Players").LocalPlayer.Character.AssaultRifle.Event:FireServer(unpack(args))
+        end
+    print("Clicked")
+end)
+Section:NewButton("damage spawned babyworm with AssaultRifle", " yuck", function()
+        while wait() do
+local args = {
+    [1] = workspace["Baby Worm"].Humanoid,
+    [2] = "AssaultRifle",
+    [3] = 271124
+}
+
+game:GetService("Players").LocalPlayer.Character.AssaultRifle.Event:FireServer(unpack(args))
+        end
+    print("Clicked")
+end)
+Section:NewButton("damage SCP 1399 with AssaultRifle", "ButtonInfo", function()
+        while wait() do
+local args = {
+    [1] = workspace["SCP 3199"]["SCP 3199"].Humanoid,
+    [2] = "AssaultRifle",
+    [3] = 305154
+}
+
+game:GetService("Players").LocalPlayer.Character.AssaultRifle.Event:FireServer(unpack(args))
+        end
+    print("Clicked")
+end)
