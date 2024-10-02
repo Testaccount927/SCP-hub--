@@ -17,7 +17,8 @@ local args = {
     [2] = "AssaultRifle",
     [3] = 3672
 }
-            
+
+
 
 game:GetService("Players").LocalPlayer.Character.AssaultRifle.Event:FireServer(unpack(args))
         end
@@ -44,6 +45,18 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.AssaultRifle.Event:FireServer(unpack(args))
+        end
+    print("Clicked")
+end)
+Section:NewButton("damage Siren head with Glock", "ButtonInfo", function()
+        while wait() do
+local args = {
+    [1] = workspace["Siren Head"]["Siren Head"]["Siren Head"].Humanoid,
+    [2] = "Glock",
+    [3] = 277500
+}
+
+game:GetService("Players").LocalPlayer.Character.Glock.Event:FireServer(unpack(args))
         end
     print("Clicked")
 end)
